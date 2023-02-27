@@ -9,15 +9,14 @@ class greet():
       self.gender=gender
        
  def say(self):
-    if self.gender in ['male','Male'] :
+    if self.gender in ['male','Male' ,'M','m'] :
         engine.say('hello mister ' + self.name) 
         engine.runAndWait()
         
-    if self.gender in ['female','Female'] :
+    if self.gender in ['female','Female','F','f'] :
         engine.say('hello madam ' + self.name)     
         engine.runAndWait()
-name=input("enter Your Name :")
-gender=input("Enter Your Gender: ")
-I=greet(name,gender)
+ 
+I=greet("name",'female')
 
 I.say()
